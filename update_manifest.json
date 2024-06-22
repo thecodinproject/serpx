@@ -3,7 +3,7 @@
       "example@example.com": {
         "updates": [
           {
-            "version": "0.1.0",
+            "version": "0.1.1",
             "update_link": "https://github.com/thecodinproject/serpx/raw/main/SerpExt-mv2.xpi"
           }
         ]
