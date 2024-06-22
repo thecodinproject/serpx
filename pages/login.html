@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/main.css"></link>
+<title> Login to SerPaid! </title>
+</head>
+<body >
+  <div style="border-radius: 10px;" class="login-page">
+    <div class="form">
+      <div class="login">
+        <div class="login-header">
+          <h3>SerPaid Login</h3>
+          <!-- <ul>
+              <% if (typeof errors != 'undefined') { %> <% errors.forEach(error => { %>
+              <li><%= error.message %></li>
+              <% }) %> <% } %>
+          </ul>
+          <ul>
+              <% if(messages.success_msg) { %>
+              <li><%= messages.success_msg %></li>
+              <% } %>
+          </ul>
+          <ul>
+              <% if (messages.error) { %>
+              <li><%= messages.error %></li>
+              <% } %>
+          </ul> -->
+          <p>Please enter your credentials to login.</p>
+        </div>
+      </div>
+      <!-- <form class="login-form" action="http://localhost:4000/clickin" method="POST"> -->
+      <form class="login-form">
+        <input id="email" name="email" type="email" placeholder="Enter your email" />
+        <input id="password" name="password" type="password" placeholder="Enter a password" />
+        <button id=sign-in type="submit">Login</button>
+        <div id="fail" style="color:grey; margin-top:10px; font-size: large;">   &zwnj; </div>
+      </form>
+    </div>
+  </div>
+  <script src="../js/login.js"></script>
+</body>
+</html>

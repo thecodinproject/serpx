@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css"></link>
+    <title>Clicker Dashboard</title>
+</head>
+<body>
+    <div style="display: none;"  id="overlay">
+          <!-- <p>Task in progress!! <br> Please Wait Until Finished</p> -->
+          <p id="validate" style="display:none;">Validating task...</p> 
+          <p id="'progress">Task in progress!!</p>
+          <br><p> Please Wait</p>
+      </div>
+    <div class="center-flex">
+        <div class="horiz-flex"><button id="logout"><a>Log Out</a></button><p id="refresh"></p>
+            <!-- <p id="ipText">IP: ...</p> -->
+        </div>
+        <div class="center-container">
+            <div class="horiz-flex" style="max-width: none;">
+                <button id="notifBtn">🔔</button><h3 >Available Tasks</h3><button id="removeBtn">Remove</button>
+            </div> 
+            <h1 id="loggedIn"></h1>
+            <div class='container' id='container'> </div>
+            <div class='messages' id="messages"></div> <br>
+            <div id="hcaptcha" class="h-captcha" data-sitekey="54dfd011-a6d4-4284-8de4-3322eb53297b"></div>
+        </div>
+        <p id="fcm"></p>
+    </div>
+
+
+<script src="../js/dash.js"></script>
+</body>
+</html>
